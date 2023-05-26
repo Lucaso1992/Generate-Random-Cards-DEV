@@ -1,4 +1,4 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
 
 body {
   background-color: green;
@@ -8,4 +8,8 @@ body {
   background-color: white;
   height: 400px;
   width: 300px;
+}
+
+.bottom {
+  transform: rotate(3.142rad);
 }

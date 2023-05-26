@@ -29,7 +29,7 @@ const randomCard = (number, emoji) => {
   class="card container text-center d-flex flex-column justify-content-between mt-5"
 >
   <div class="text-start display-3 ${color}">${emoji}</div>
-  <div class="center text-center display-1">${number}</div>
+  <div class="text-center display-1">${number}</div>
   <div class="bottom text-end display-3 ${color}">${emoji}</div>
 </div>)`;
 };
