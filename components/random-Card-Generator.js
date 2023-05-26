@@ -12,10 +12,10 @@ const myNumbers = [
   "10",
   "J",
   "Q",
-  "K"
+  "K",
 ];
 
-const findRandom = array => {
+const findRandom = (array) => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
@@ -30,7 +30,7 @@ const randomCard = (number, emoji) => {
 >
   <div class="text-start display-3 ${color}">${emoji}</div>
   <div class="text-center display-1">${number}</div>
-  <div class="bottom text-end display-3 ${color}">${emoji}</div>
+  <div class="bottom text-end display-3 rotate-sm-l-90 ${color}">${emoji}</div>
 </div>)`;
 };
 
