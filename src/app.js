@@ -1,11 +1,9 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+import generateRandomCard from "../components/random-Card-Generator";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+const app = document.querySelector("#app");
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+const render = () => {
+  app.innerHTML = generateRandomCard;
 };
+
+render();
