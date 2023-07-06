@@ -4,11 +4,9 @@ const app = document.querySelector("#app");
 const buttonShuffler = document.querySelector("#buttonRender");
 
 const render = () => {
-  app.innerHTML = generateRandomCard;
+  app.innerHTML = generateRandomCard();
 };
 
 render();
 
-buttonShuffler.addEventListener("click", () => {
-  location.reload();
-});
+buttonShuffler.addEventListener("click", render);

@@ -12,10 +12,10 @@ const myNumbers = [
   "10",
   "J",
   "Q",
-  "K"
+  "K",
 ];
 
-const findRandom = array => {
+const findRandom = (array) => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
@@ -31,9 +31,7 @@ const randomCard = (number, emoji, color) => {
 </div>)`;
 };
 
-const generateRandomCard = randomCard(
-  findRandom(myNumbers),
-  findRandom(myEmojis)
-);
+const generateRandomCard = () =>
+  randomCard(findRandom(myNumbers), findRandom(myEmojis));
 
 export default generateRandomCard;
