@@ -19,18 +19,15 @@ const findRandom = array => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
-const randomCard = (number, emoji) => {
-  let color = "";
+const randomCard = (number, emoji, color) => {
   emoji === "♥" || emoji === "♦"
-    ? (color = "text-red-500")
-    : (color = "text-black");
+    ? (color = "text-danger")
+    : (color = "text-dark");
 
-  return `<div
-  class="card container text-center d-flex flex-column justify-content-between mt-5"
->
+  return `<div class="card container text-center d-flex flex-column justify-content-between mt-5">
   <div class="text-start display-3 ${color}">${emoji}</div>
-  <div class="text-center display-1">${number}</div>
-  <div class="bottom text-end display-3 ${color}">${emoji}</div>
+  <div class="text-center display-1 ${color}"> ${number}</div>
+  <div class="text-start display-3 third ${color}">${emoji}</div>
 </div>)`;
 };
 
