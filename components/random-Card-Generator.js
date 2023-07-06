@@ -12,10 +12,10 @@ const myNumbers = [
   "10",
   "J",
   "Q",
-  "K",
+  "K"
 ];
 
-const findRandom = (array) => {
+const findRandom = array => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
